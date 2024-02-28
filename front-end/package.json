@@ -2,5 +2,17 @@
   "dependencies": {
     "colors": "^1.4.0",
     "http-server": "^14.0.0"
-  }
+  },
+  "name": "alain-meme-ory",
+  "version": "1.0.0",
+  "description": "A memory game based on memes ¯\\(ツ)\\/¯.",
+  "private": true,
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "http-server -c-1",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
 }
