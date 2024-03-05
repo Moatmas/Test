@@ -1,5 +1,5 @@
 // TODO #export-router: remove this IIFE
-(function () {
+
   /**
    * Append an html template to the document, at the given outlet.
    * @param HTMLElement outlet the location on the document to add the template
@@ -17,7 +17,7 @@
    * @param {HTMLElement} outlet The element to put components into.
    */
   // TODO #export-router: export this function
-  function Router(outlet) {
+   export function Router(outlet) {
     this._components = {};
     this._templates = {};
     this._outlet = outlet;
@@ -29,8 +29,6 @@
       this._onLocationChanged(event.newURL)
     );
   }
-  // TODO #export-router: remove this assignation
-  window.Router = Router;
 
   /**
    * Bind a component ot be displayed when the registered URL is reached.
@@ -139,4 +137,4 @@
     };
     xhr.send();
   }
-})();
+;
