@@ -1,5 +1,6 @@
 // TODO #export-router: remove this IIFE
 
+
   /**
    * Append an html template to the document, at the given outlet.
    * @param HTMLElement outlet the location on the document to add the template
@@ -137,4 +138,4 @@
     };
     xhr.send();
   }
-;
+
