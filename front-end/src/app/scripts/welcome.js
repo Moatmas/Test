@@ -20,7 +20,7 @@ import { parseUrl } from "./utils";
     form.addEventListener(
       "submit",
       // TODO #arrow-function: use arrow function instead.
-      function (event) {
+      (event) => {
         event.preventDefault();
         if (form.checkValidity() === false) {
           event.stopPropagation();
@@ -31,7 +31,7 @@ import { parseUrl } from "./utils";
 
           _startGame(name, size);
         }
-      }.bind(this),
+      },
       false
     );
 
@@ -42,7 +42,6 @@ import { parseUrl } from "./utils";
   function _startGame(name, size) {
     // TODO #spa: replace with './#game'
     let gamePage = "./#game";
-    // TODO #template-literals:  use template literals (backquotes)
-    window.location = gamePage + "?name=" + name + "&size=" + size;
+    window.location = `${gamePage} + "?name=" + ${name} + "&size=" + ${size}`;
   }
 
